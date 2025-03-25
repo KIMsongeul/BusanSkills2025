@@ -11,16 +11,20 @@ public class HpSystem : MonoBehaviour
 
     private void Start()
     {
+        hpSlider.maxValue = maxHp;
         currentHp = maxHp;
-        hpSlider.value = currentHp/maxHp;
+        hpSlider.value = maxHp;
     }
     public void Damage(int damage)
     {
         currentHp -= damage;
-        hpSlider.value = currentHp/maxHp;
         if (currentHp <= 0)
         {
             //Died
         }
+    }
+    private void Update()
+    {
+        hpSlider.value = currentHp;
     }
 }
