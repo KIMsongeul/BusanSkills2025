@@ -18,8 +18,59 @@ public class ButtonManager : MonoBehaviour
     {
         shop.SetActive(false);
     }
-    public void O2Item1()
+    public void O2Item1(int price)
     {
-        
+        if (Gold.Instance.SpendGold(price))
+        {
+
+        }
+        else
+        {
+            Debug.Log("골드가 부족합니다!");
+        }
+    }
+    public void O2Item2(int price)
+    {
+        if (Gold.Instance.SpendGold(price))
+        {
+
+        }
+        else
+        {
+            Debug.Log("골드가 부족합니다!");
+        }
+    }
+    public void O2Item3(int price)
+    {
+        if (Gold.Instance.SpendGold(price))
+        {
+
+        }
+        else
+        {
+            Debug.Log("골드가 부족합니다!");
+        }
+    }
+    public void BagItem1(int price)
+    {
+        if (Gold.Instance.SpendGold(price))
+        {
+
+        }
+        else
+        {
+            Debug.Log("골드가 부족합니다!");
+        }
+    }
+    public void BagItem2(int price)
+    {
+        if (Gold.Instance.SpendGold(price))
+        {
+
+        }
+        else
+        {
+            Debug.Log("골드가 부족합니다!");
+        }
     }
 }
